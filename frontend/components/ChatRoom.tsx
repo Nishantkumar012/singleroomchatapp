@@ -13,7 +13,9 @@ const wsRef = useRef<WebSocket | null>(null);
       
       const msgRef = useRef<HTMLInputElement>(null);
    useEffect(()=>{
-     const ws = new WebSocket("ws://localhost:8000");
+    //  const ws = new WebSocket("ws://localhost:8000");
+     const ws = new WebSocket("https://singleroomchatapp.onrender.com/");
+
          
       // ws.onmessage=(e)=>{
       //      const data = JSON.parse(e.data);
